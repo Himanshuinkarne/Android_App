@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:background="#33ffffff"
+    android:alpha="0.8"
+    android:padding="15dp">
+
+    <com.svc.sml.Utility.TextViewMolengo
+        android:id="@+id/tv_dialog_shop_avatar_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:paddingLeft="4dp"
+        android:text="Rate your AVATAR"
+        android:textColor="@color/tcolor"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/hline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_dialog_shop_avatar_rating"
+        android:layout_marginTop="18dp"
+        android:background="@color/color_gray_line"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hline"
+        android:paddingTop="15dp"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBar_shop_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressBackgroundTint="@android:color/darker_gray"
+            android:progressTint="@color/tcolor"
+            android:rating="0.0"
+            android:secondaryProgressTint="@color/textColorPrimary"
+            android:stepSize="0.5" />
+
+        <com.svc.sml.Utility.TextViewMolengo
+            android:id="@+id/tv_dialog_shop_avatar_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            android:text="Thanks"
+            android:textColor="@color/tcolor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/con_dailog_avatar_rating_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/color_gray_line" />
+
+            <Button
+                android:id="@+id/btn_dialog_shop_avatar_ok"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="OK"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--android:backgroundTint="@android:color/holo_green_dark"
+     android:foregroundTint="@android:color/holo_red_dark"
+        android:foreground="@android:color/holo_orange_light"
+        android:background="@android:color/holo_orange_dark"-->
+
+<!--</LinearLayout>-->
+
+    </RelativeLayout>

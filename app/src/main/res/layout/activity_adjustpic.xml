@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/con_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:text="Fit your face to the outline"
+            style="@style/inTitleHeader"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fm_adjustpic_iv_container"
+        android:background="@color/whitetitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/con_header"
+        android:layout_above="@+id/shared_layout_bottom_view">
+
+        <ImageView
+            android:id="@+id/iv_adjustpic_userpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+           />
+        <!--android:background="@color/color_white"-->
+
+        <ImageView
+            android:id="@+id/iv_adjustpic_transparent_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/face_outline_adjustpic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/btn_zoom"
+            android:layout_gravity="right|top"
+            android:src="@drawable/selector_adjustpic_zoom"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp"
+            android:scaleType="centerInside" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_rotate"
+            android:layout_gravity="right|top"
+            android:src="@drawable/selector_adjustpic_rotate"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/zoomRotateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom Mode"
+            android:textColor="@color/whitetitle"
+            android:textSize="14sp"
+            android:layout_margin="16dp"
+            android:layout_gravity="left|top"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/shared_layout_bottom_btn" />
+
+</RelativeLayout>

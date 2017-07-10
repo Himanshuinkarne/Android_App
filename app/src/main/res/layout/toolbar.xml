@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@drawable/bg_header"
+    >
+
+    <!--android:background="?attr/colorPrimary"-->
+    <!--android:minHeight="?attr/actionBarSize"-->
+    <!--local:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/con_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingLeft="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/btn_cart_topbar" />
+
+            <TextView
+                android:id="@+id/tv_topbar_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/tcolor"
+                android:textSize="15sp"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/color_gray_line"></View>
+
+        </LinearLayout>
+
+        <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"-->
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/inTitleHeaderParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:visibility="invisible"
+            />
+        <!--android:layout_toRightOf="@+id/con_cart"-->
+
+        <Spinner
+            android:id="@+id/s_shop_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/con_cart"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:popupBackground="@color/whitetitle"
+            android:text="Trending"/>
+        <!--android:gravity="right"-->
+        <!--android:layout_toLeftOf="@+id/iv_styleRating"-->
+        <!--android:layout_toRightOf="@+id/ivBtn_home_drawer"-->
+
+        <ImageView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/sku_style_rating"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/style" />
+
+        <TextView
+            android:id="@+id/sku_style_rating"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/ll_like_container"
+            android:textColor="@color/tcolor"
+            android:textSize="15sp" />
+
+        <!--android:layout_gravity="center_vertical"-->
+        <LinearLayout
+            android:id="@+id/ll_like_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true">
+
+            <!--android:layout_toLeftOf="@+id/ivBtnShare"-->
+
+            <ImageView
+                android:id="@+id/iv_like"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="1dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:id="@+id/tv_likes_count"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/tcolor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ivBtnShare"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless">-->
+
+            <!--<ImageView-->
+                <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/share" />-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+

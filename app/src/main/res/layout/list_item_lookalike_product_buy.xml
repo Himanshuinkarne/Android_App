@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/whitetitle"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:descendantFocusability="blocksDescendants">
+
+        <FrameLayout
+            android:id="@+id/iv_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+            <!--android:background = "@drawable/shape"-->
+            <!--<com.svc.sml.Utility.INetworkImageView-->
+            <!--<com.android.volley.toolbox.NetworkImageView-->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_network_product"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+            <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:gravity="center"/>
+
+
+        <!--android:adjustViewBounds="true"-->
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_brand_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:ellipsize="none"
+                android:maxLines="2"
+                android:text="Gas"
+                android:textColor="@color/textColorSecondry"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:ellipsize="none"
+                android:text="Rs 4000"
+                android:textColor="@color/textColorSecondry"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_cart"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/height_btn_listview"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:focusable="false"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/btn_cart"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--/>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/con_soldout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99cccccc"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_soldout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/sold_out" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/con_outofstock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00bbbbbb"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_outofstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/out_of_stock" />
+    </LinearLayout>
+
+</FrameLayout>

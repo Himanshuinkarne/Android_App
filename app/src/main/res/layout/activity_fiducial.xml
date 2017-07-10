@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:id="@+id/container_video_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+    <RelativeLayout
+        android:id="@+id/container_topbar_fiducial"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <!--style="@style/inTitleHeader"-->
+        <!--<com.svc.inkarne.Utility.TextViewLobster-->
+        <!--android:text="Fine-tune facial features"-->
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:id="@+id/tv_title_fiducial"
+            android:text="Place points accurately"
+            style="@style/inTitleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_fiducial_hint"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+           />
+
+        <ImageButton
+            android:id="@+id/btn_fiducial_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_hint"
+            android:background="?attr/selectableItemBackgroundBorderless"
+     />
+        <!--android:text="FACE"-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/container_topbar_fiducial"
+        android:layout_height="wrap_content">
+        <!--android:paddingTop="15dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <ImageView
+            android:id="@+id/userpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--android:src="@drawable/login_bg"-->
+        <!--android:src="@drawable/login_logo"-->
+        <ImageView
+            android:id="@+id/demopic"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_alignRight="@+id/userpic"
+             />
+        <ImageView
+            android:id="@+id/demopic_left"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_alignLeft="@+id/userpic"
+            />
+    </RelativeLayout>
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/shared_layout_bottom_btn" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/container_video_fiducial"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@android:color/transparent">-->
+        <!--<VideoView-->
+            <!--android:id="@+id/vv_fiducials_hint"-->
+            <!--android:layout_above="@+id/view_loading"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@android:color/holo_red_dark"-->
+            <!--android:layout_gravity="center" />-->
+
+        <!--&lt;!&ndash;com.svc.inkarne.View.LoadingView&ndash;&gt;-->
+        <!--<com.svc.inkarne.View.LoadingView-->
+            <!--android:id="@+id/view_loading"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/height_footer"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--app:loadingViewText="Skip"-->
+
+            <!--></com.svc.inkarne.View.LoadingView>-->
+
+    <!--</RelativeLayout>-->
+        </RelativeLayout>
+</LinearLayout>

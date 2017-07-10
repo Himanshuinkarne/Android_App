@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/whitetitle"
+    android:weightSum="1"
+
+    >
+    <!--android:background="@color/bg_mixmatch_sku"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <!--android:background="@color/bg_mixmatch_sku_item"-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_sku"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:foregroundGravity="center"
+                android:background="@drawable/rectangle_transparent_background"
+                />
+
+            <!--android:alpha=".4"-->
+
+            <ProgressBar
+                android:id="@+id/pb_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progress_bar_indeterminate"
+                android:visibility="invisible" />
+
+            <!--android:background="@drawable/progress_bar"-->
+
+            <com.svc.sml.Utility.CircularProgressWheel
+                android:id="@+id/cpb_sku"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                ProgressWheel:pwBarColor="#339BB9"
+                ProgressWheel:pwBarLength="40dp"
+                ProgressWheel:pwBarWidth="5dp"
+                ProgressWheel:pwRimColor="#44000000"
+                ProgressWheel:pwRimWidth="5dp"
+                ProgressWheel:pwSpinSpeed="3dp"
+                ProgressWheel:pwTextColor="#222222"
+                ProgressWheel:pwTextSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/v_is_downloaded"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@color/tcolor"
+                />
+            />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

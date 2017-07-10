@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dailog_upload_file1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1002.xml"
+            android:textColor="#ffddff" />
+
+        <ProgressBar
+            android:id="@+id/pb_dialog_upload1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:indeterminate="true"
+            android:max="100"
+
+            android:progress="1" />
+    </LinearLayout>
+</LinearLayout>

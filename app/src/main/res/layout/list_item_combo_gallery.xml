@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_combo_gallery_item"
+    android:padding="4dp"
+    android:paddingRight="30dp"
+
+    >
+    <!--android:background="@android:color/holo_orange_light"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_combo_gallery_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/selector_looks_click"
+
+             />
+        <TextView
+            android:id="@+id/tv_temp_comboId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center_horizontal"/>
+        <!--android:src="@drawable/logo_registration"-->
+
+        <ProgressBar
+            android:id="@+id/pb_combo_gallery_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_bar_indeterminate"
+            android:layout_gravity="center" />
+        <View
+            android:id="@+id/v_is_downloaded"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/height_horizontal_line_downloaded"
+            android:background="@color/color_is_downloaded"
+            android:layout_gravity="bottom|center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+
+            ></View>
+
+    </FrameLayout>
+</LinearLayout>

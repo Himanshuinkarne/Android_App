@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.svc.sml.ShopActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="@string/info_choose_hairstyle"
+        android:textColor="@color/default_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/dLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/surfaceviewclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+                <ProgressBar
+                    android:id="@+id/pb_face_glsurface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                   />
+
+                <!--android:foreground="#a31212"-->
+                <!--android:foregroundTint="#52db0e"-->
+                <!--android:background="#5154ff"-->
+                <!--android:indeterminateTint="#86fff5"-->
+
+            </FrameLayout>
+
+            <!--<com.svc.inkarne.HorizontalListView-->
+            <!--android:id="@+id/hListView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="bottom|center_horizontal">-->
+            <!--</com.svc.inkarne.HorizontalListView>-->
+            <LinearLayout
+                android:id="@+id/ll_bottomViewhList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_hlist_face3dactivity"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="vertical"></LinearLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_next_container"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/height_next_button"-->
+                <!--android:background="@android:color/transparent"-->
+                <!-->-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_next"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Next"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:background="@drawable/selector_btn_footer"-->
+                    <!--android:onClick="nextBtnClickHandler"-->
+
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <include
+                android:id="@+id/shared_layout_bottom_view"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                layout="@layout/shared_layout_bottom_btn" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="#0099cc"--><!--tools:context="com.svc.inkarne.Activity.Face3DDownloadActivity">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rl_fragment_face_load"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true">-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</FrameLayout>-->
+

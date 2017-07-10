@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.svc.sml.Utility.ButtonFontML
+        android:id="@+id/btn_shared_next"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_btn_footer"
+        android:layout_height="@dimen/height_footer" android:text="NEXT"
+        android:textColor="@color/tcolor"
+        android:onClick="nextBtnClickHandler"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

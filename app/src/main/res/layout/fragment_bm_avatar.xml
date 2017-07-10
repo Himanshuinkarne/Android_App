@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.svc.sml.Fragments.BMAvatarFragment"
+    android:background="@android:color/white"
+    >
+    <!--android:background="@android:color/holo_orange_dark"-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal">
+
+        <com.svc.sml.Utility.TextViewML
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="9dp"
+            android:text="Height"
+            android:textColor="@color/tcolor"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_bm_height_ft"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg_reg_small"
+                android:textColor="@color/tcolor"
+                android:text="5" />
+
+            <com.svc.sml.Utility.TextViewML
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="ft."
+                android:textColor="@color/tcolor"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bm_height_in"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg_reg_small"
+                android:text="6"
+                android:textColor="@color/tcolor"/>
+
+            <com.svc.sml.Utility.TextViewML
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="in."
+                android:textColor="@color/tcolor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--android:background="@android:color/holo_orange_light"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal">
+
+        <com.svc.sml.Utility.TextViewML
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Weight"
+            android:textColor="@color/tcolor"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bm_weight"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg_reg_small"
+                android:text="60"
+                android:textColor="@color/tcolor"/>
+
+            <com.svc.sml.Utility.TextViewML
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="Kg."
+                android:textColor="@color/tcolor"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Seekbar-->
+    <!--android:background="@android:color/holo_purple"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+
+        <!--android:paddingLeft="1dp"-->
+        <!--android:paddingRight="1dp"-->
+        <com.svc.sml.Utility.BMSeekBar
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/bustSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="50"
+            android:maxHeight="20dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="33"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Bust"
+            app:progressLeftTextSize="15dp"
+            app:progressThumbTextSize ="14dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+        <com.svc.sml.Utility.BMSeekBar
+            android:id="@+id/waistSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="50"
+            android:maxHeight="20dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="30"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Waist"
+            app:progressLeftTextSize="15dp"
+            app:progressThumbTextSize ="14dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+        <com.svc.sml.Utility.BMSeekBar
+            android:id="@+id/hipsSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="50"
+            android:maxHeight="20dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="33"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Hips"
+            app:progressLeftTextSize="15dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressThumbTextSize ="14dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+    </LinearLayout>
+    <!--Buttons-->
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/whitetitle"
+    tools:context="com.svc.sml.Activity.HairStyleActivity">
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <RelativeLayout
+        android:id="@+id/container_topbar_fiducial"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <!--<com.svc.inkarne.Utility.TextViewLobster-->
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:id="@+id/tv_title_fiducial"
+            android:text="Select your default hairstyle"
+            style="@style/inTitleHeader"
+            />
+
+        <!--android:text="FACE"-->
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@+id/container_topbar_fiducial"
+        android:layout_above="@+id/shared_layout_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/height_hairstyle_gridview"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:background="#ccdddddd"
+
+        />
+    <!--android:background="#e5e5e5"-->
+
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/shared_layout_bottom_btn" />
+
+</RelativeLayout>

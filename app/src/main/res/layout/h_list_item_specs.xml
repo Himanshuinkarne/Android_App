@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="70dp"
+    android:layout_height="@dimen/height_hlist_face3dactivity"
+    android:orientation="vertical"
+    android:layout_gravity="fill_vertical"
+    android:weightSum="3"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="@color/bg_mixmatch_sku"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding ="1dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_mixmatch_sku_item">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id = "@+id/iv_hair1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:alpha=".4"
+                android:clickable="true"
+                />
+            <!--android:background="@drawable/hair1"-->
+
+            <ProgressBar
+                android:id = "@+id/pb_hair1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <com.svc.sml.Utility.CircularProgressWheel
+                android:id="@+id/cpb_hair1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                ProgressWheel:pwTextColor="#222222"
+                ProgressWheel:pwTextSize="12sp"
+                ProgressWheel:pwRimColor="#44000000"
+                ProgressWheel:pwBarLength="40dp"
+                ProgressWheel:pwBarColor="#339BB9"
+                ProgressWheel:pwBarWidth="5dp"
+                ProgressWheel:pwRimWidth="5dp"
+                ProgressWheel:pwSpinSpeed="3dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id = "@+id/tv_hair1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            />
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:padding ="1dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_mixmatch_sku_item">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id = "@+id/iv_hair2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:alpha=".4"
+                android:layout_gravity="center"
+                android:clickable="true"
+                />
+            <!--android:background="@drawable/hair3"-->
+            <ProgressBar
+                android:id = "@+id/pb_hair2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <com.svc.sml.Utility.CircularProgressWheel
+                android:id="@+id/cpb_hair2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                ProgressWheel:pwTextColor="#222222"
+                ProgressWheel:pwTextSize="12sp"
+                ProgressWheel:pwRimColor="#44000000"
+                ProgressWheel:pwBarLength="40dp"
+                ProgressWheel:pwBarColor="#339BB9"
+                ProgressWheel:pwBarWidth="5dp"
+                ProgressWheel:pwRimWidth="5dp"
+                ProgressWheel:pwSpinSpeed="3dp"
+
+                android:visibility="invisible"/>
+            <TextView
+                android:id = "@+id/tv_hair2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:padding ="1dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_mixmatch_sku_item">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id = "@+id/iv_hair3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:alpha=".4"
+                android:layout_gravity="center"
+                android:clickable="true"
+                />
+            <!--android:background="@drawable/hair3"-->
+            <ProgressBar
+                android:id = "@+id/pb_hair3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <com.svc.sml.Utility.CircularProgressWheel
+                android:id="@+id/cpb_hair3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                ProgressWheel:pwTextColor="#222222"
+                ProgressWheel:pwTextSize="12sp"
+                ProgressWheel:pwRimColor="#44000000"
+                ProgressWheel:pwBarLength="40dp"
+                ProgressWheel:pwBarColor="#339BB9"
+                ProgressWheel:pwBarWidth="5dp"
+                ProgressWheel:pwRimWidth="5dp"
+                ProgressWheel:pwSpinSpeed="3dp"
+
+                android:visibility="invisible"/>
+            <TextView
+                android:id = "@+id/tv_hair3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

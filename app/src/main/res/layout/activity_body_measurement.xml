@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    tools:context="com.svc.sml.Activity.BodyMeasurementActivity">
+
+    <RelativeLayout
+        android:id="@+id/con_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:text="Enter your body measurements"
+            style="@style/inTitleHeader"
+            />
+    </RelativeLayout>
+
+    <fragment android:id="@+id/fragmentBM"
+        android:name="com.svc.sml.Fragments.BMFragment"
+        tools:layout="@layout/fragment_bm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/con_header"
+        android:layout_above="@+id/shared_layout_bottom_view"
+        />
+    <!--android:layout_above="@+id/shared_layout_bottom_view"-->
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        layout="@layout/shared_layout_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

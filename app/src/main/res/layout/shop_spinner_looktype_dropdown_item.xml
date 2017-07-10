@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView-->
+    <!--style="?android:attr/spinnerItemStyle"-->
+    <!--android:ellipsize="marquee"-->
+<com.svc.sml.Utility.TextViewFontHeader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+
+    style="@style/inTitleHeaderParent"
+    android:singleLine="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_vertical"
+    android:paddingLeft="8dp"
+    android:layout_gravity="right|center_vertical"
+     />

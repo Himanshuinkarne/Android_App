@@ -1,0 +1,167 @@
+<resources>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="MyMaterialTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/color_translucent_black_overlay</item>
+    </style>
+
+
+    <style name="NoTitleTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Custom style-->
+
+    <style name="inTitleHeaderParent" >
+        <item name="android:textColor">@color/tcolorHeader</item>
+        <item name="android:textSize">30sp</item>
+
+    </style>
+
+    <style name="inTitleHeader" parent="inTitleHeaderParent" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="tvRegistration" parent="TextAppearance.AppCompat" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/reg_edittext_height</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:textColor">@color/tcolor</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+        <item name="colorControlNormal">@android:color/holo_blue_bright</item>
+        <item name="colorControlActivated">@android:color/holo_orange_light</item>
+        <!--<item name="android:focusable">false</item>-->
+
+    </style>
+
+    <style name="textLabelReg" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <!--<item name="android:textSize">20sp</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+        <item name="colorControlNormal">@android:color/holo_blue_bright</item>
+        <item name="colorControlActivated">@android:color/holo_orange_light</item>
+    </style>
+
+
+    <!--<style name="StyledDialog" parent="@android:style/Theme.Panel">-->
+    <!--<item name="android:background">#@android:color/holo_red_dark</item>-->
+    <!--</style>-->
+
+    <style name="myProgressTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/tcolor</item>
+        <item name="android:bottomDark">@color/tcolor</item>
+        <item name="android:bottomMedium">@color/tcolor</item>
+        <item name="android:centerBright">@color/tcolor</item>
+        <item name="android:centerDark">@color/tcolor</item>
+        <item name="android:centerMedium">@color/tcolor</item>
+        <item name="android:fullBright">@color/tcolor</item>
+        <item name="android:fullDark">@color/tcolor</item>
+        <item name="android:topBright">@color/tcolor</item>
+        <item name="android:topDark">@color/tcolor</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">@color/color_progress_spinner</item>
+    <item name="android:textColorPrimary">@color/color_progress_alert_title</item>
+    <!--<item name="android:background">@color/tcolor</item>-->
+    </style>
+
+    <style name="AppCompatAlertTranslucentDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_progress_spinner</item>
+        <item name="android:windowBackground">@color/translucent_white</item>
+        <item name="android:textColorPrimary">@color/color_progress_alert_title</item>
+        <!--<item name="android:background">@color/tcolor</item>-->
+    </style>
+
+    <style name="AppCompatAlertTransparentDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">@color/transparent</item>
+        <!--<item name="android:background">@color/tcolor</item>-->
+    </style>
+    <!--<item name="android:textColorPrimary">@color/textColorSecondry</item>-->
+
+    <style name="AppAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_progress_spinner</item>
+        <item name="android:textColorPrimary">@color/color_progress_alert_title</item>
+        <!--<item name="android:background">@color/tcolor</item>-->
+    </style>
+
+    <style name="AppAlertTranslucentDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_progress_spinner</item>
+        <item name="android:windowBackground">@color/translucent_white</item>
+        <item name="android:textColorPrimary">@color/color_progress_alert_title</item>
+        <!--<item name="android:background">@color/tcolor</item>-->
+    </style>
+
+
+    <!-- Tab Layout style-->
+    <style name="tabLayoutInkarne" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/tabTextInkarne</item>
+        <item name="tabSelectedTextColor">@color/tcolor_green</item>
+    </style>
+
+    <style name="tabTextInkarne" parent="TextAppearance.AppCompat.Button">
+        <!--<item name="android:textSize">14sp</item>-->
+        <item name="android:textColor">@color/sendotp_grey</item>
+    </style>
+
+    <!--not used-->
+    <style name="LooksTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#0000FF</item>
+    </style>
+
+    <style name="LooksTabLayout2" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

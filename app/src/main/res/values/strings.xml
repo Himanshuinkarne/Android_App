@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Style My Looks</string>
+    <!--Dev FB AppId-->
+    <!--<string name="facebook_app_id">932014866902928</string>-->
+    <!--Release FB AppId-->
+    <string name="facebook_app_id">1754237431502009</string>
+
+    <!--<string name="wcfpath1">http://192.168.2.7/WcfService1/Service1.svc/</string>-->
+
+    <!-- navigation drawer item labels  -->
+
+
+    //alerts
+
+    //Information
+
+    <!--<string name="face_image_quality_suggestion">A good picture helps create an accurate complexion</string>-->
+    <string name="face_image_quality_suggestion">A good picture is important to reconstruct\n your complexion accurately</string>
+
+    <string name="video_title_feducial_point_move">Move the points to accurately capture your face shape</string>
+    <!--<string name="video_title_lightng_instruction">Good lighting ensures that your features are captured clearly</string>-->
+    <string name="video_title_lightng_instruction">Ensure good &amp; even lighting on your face</string>
+    <string name="video_title_adjust_pic_to_outline">Re-orient your picture to fit the outline on the screen</string>
+    <string name="reg_terms_condition">I ACCEPT ALL TERMS AND CONDITIONS</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="info_choose_hairstyle">CHOOSE A HAIRSTYLE THAT WOULD SUIT YOU THE BEST</string>
+
+    <string name="warning_delete_face">Are you sure you want to delete this Face ?</string>
+
+
+    <!--Messages-->
+    <string name="message_loading_text_pics_share">"Capturing render image ..."</string>
+    <!--<string name="message_loading_text_video_share_creation">Creating 360&#730; look. Please wait..</string>-->
+    <string name="message_loading_text_video_share_creation">Creating your video, please wait...</string>
+    <string name="message_loading_looks">Organising your closet... </string>
+    <!--<string name="message_rendering_looks">Simulating your look... </string>-->
+    <string name="message_rendering_looks">Styling your look... </string>
+    <string name="message_rendering_face">Loading... </string>
+    <string name="message_loading_sku_data_activity">Personalizing your looks...</string>
+    <!--<string name="message_fiducials_upload_pic">Extracting facial features... </string>-->
+    <string name="message_fiducials_upload_pic">Analyzing facial features... </string>
+    <string name="message_fiducials_get_points_2">Analyzing facial features... </string>
+    <string name="message_wait">This may take some time depending on your network connection</string>
+
+    <!--<string name="message_loading_face_response">Uploading your details to server...</string>-->
+    <string name="message_loading_face_response">Personalizing your avatar...</string>
+    <string name="message_loading_bm_response">Personalizing your body shape...</string>
+    <string name="message_wait_face_download">One final step to fast forward you to future fashion!</string>
+
+    <!--<string name="message_non_indian_phone_warning">We currently support orders from India only and plan to expand soon. You are more than welcome to fast forward to our fashion experience until then!</string>-->
+    <!--<string name="message_network_download_title">Network configuration</string>-->
+    <string name="message_network_download_title">"Please check your network connection"</string>
+    <!--<string name="switch_message_network_download">Use mobile data for Looks and mix&amp;match downloads</string>-->
+    <string name="switch_message_network_download">Download on wifi only</string>
+    <string name="switch_message_autorotate">Disable looks rotation on load</string>
+    <string name="title_activity_hair_style">HairStyleActivity</string>
+
+    <string name="message_network_failure">Please check your network connection.</string>
+    <string name="message_network_no_wifi">High network speed preferred for 3D creation.</string>
+    <string name="message_server_other_failure">Failed to get data.Please try after sometime or restart.</string>
+
+    <string name="message_error_generic">Oops,could not reach our servers. Retrying...</string>
+
+
+</resources>

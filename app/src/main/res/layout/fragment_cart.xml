@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.svc.sml.Activity.CartActivity"
+    android:clickable="true">
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+
+    <RelativeLayout
+        android:id="@+id/con_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <ImageButton
+            android:id="@+id/btn_back_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_mixmatch" />
+
+        <com.svc.sml.Utility.TextViewFontHeader
+            style="@style/inTitleHeader"
+            android:text="Cart" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/con_header"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/default_text_color"
+        android:focusable="true"></ListView>
+
+    <ProgressBar
+        android:id="@+id/pb_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bar_indeterminate" />
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:id="@+id/rootLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/btn_help"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--fab:elevation="6dp"-->
+            <!--fab:pressedTranslationZ="12dp"-->
+            <!--fab:backgroundTint= "@color/color_bold_pink"/>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+
+</RelativeLayout>
+

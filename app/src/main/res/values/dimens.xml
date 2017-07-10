@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+
+
+    <dimen name="height_fiducial_window">500dp</dimen>
+    <dimen name="offset_fiducial_y_offset">400dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_vertical_face_selection">20dp</dimen>
+    <dimen name="margin_vertical_registration_form">28dp</dimen>
+
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+
+
+    <dimen name="dailer_fragement_dailer_vertical_margin">20dp</dimen>
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+
+    <dimen name="reg_edittext_height">42dp</dimen>
+
+    <dimen name="margin_labelandvalue_looaklike">10dp</dimen>
+
+    <dimen name="height_hlist_face3dactivity">150dp</dimen>
+    <dimen name="height_hlist_shopactivity">60dp</dimen>
+
+    <dimen name="height_footer">48dp</dimen>
+    <dimen name="height_header">48dp</dimen>
+
+
+    <dimen name="height_lookalike_sku">70dp</dimen>
+    <dimen name="width_mixmatch_fragment_list">68dp</dimen>
+
+    <dimen name="height_loading_view">50dp</dimen>
+    <dimen name="height_loading_view_data">105dp</dimen>
+
+    <dimen name="height_btn_listview">34dp</dimen>
+
+    <dimen name="height_combo_gallery_item">165dp</dimen>
+    <dimen name="dx_con_lookalike_share">70dp</dimen>
+    <dimen name="height_collection_coverflow">200dp</dimen>
+    <dimen name="width_collection_coverflow">135dp</dimen>
+
+    <dimen name="height_combo_gallery_item_foryou">185dp</dimen>
+    <dimen name="height_collection_coverflow_foryou_fragment">210dp</dimen>
+    <dimen name="width_collection_coverflow_foryou_fragment">135dp</dimen>
+
+    <dimen name="height_hairstyle_gridview">110dp</dimen>
+
+    <dimen name="height_horizontal_line_downloaded">2dp</dimen>
+
+
+    <dimen name="tab_max_width">100dp</dimen>
+
+    <dimen name="height_looks_bottom_view">200dp</dimen>
+
+</resources>

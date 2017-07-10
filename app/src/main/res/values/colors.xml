@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffdcdcdc</color>
+    <color name="colorPrimaryDark">#5d5d5d</color>
+    <!--<color name="textColorPrimary">#3d54c7</color>-->
+
+    <color name="textColorPrimary">#3d54c7</color>
+    <color name="textColorSecondry">#EF6262</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <!--<color name="tcolor">#3c2273</color>-->
+    <color name="tcolor">#5d5d5d</color>
+    <color name="tcolor_green">#27A47C</color>
+    <color name="tcolor_yellow">#F0B807</color>
+    <color name="tcolorHeader">#27A47C</color>
+    <!--<color name="tcolorHeader">#3c9973</color>-->
+    <color name="hint_text_color">#b9b9b9</color>
+    <color name="color_look_pressed">#223c2273</color>
+
+    <color name="default_text_color">#ffffff</color>
+    <color name="color_translucent_black_overlay">#66000000</color>
+    <color name="color_gray_line">#dddddd</color>
+
+    //
+
+    <color name="whitetitle">#ffffff</color>
+    <color name="bg_mixmatch_sku">#bbbbbb</color>
+    <color name="bg_mixmatch_sku_item">#bbbbbb</color>
+
+    <color name="color_progress_spinner">#3c2273</color>
+
+    <color name="color_progress_alert_title">#EF6262</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#99ffffff</color>
+
+    <color name="color_is_downloaded">#ccbbbbbb</color>
+    <color name="color_mix_match_accessory_list">#ffffffff</color>
+    <color name="color_mix_match_category_list">#aaaaaaaa</color>
+    <!--<color name="color_bg_loading_view">#663c2273</color>-->
+    <color name="color_bg_loading_view">#66636363</color>
+    <color name="color_bold_pink">#e45f70</color>
+
+    <!--<color name="color_bold_pink">#ff0066</color>-->
+
+    <color name="sendotp_grey">#636363</color>
+
+
+</resources>

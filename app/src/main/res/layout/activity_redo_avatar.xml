@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitetitle"
+    tools:context=".Activity.RedoAvatarActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/container_topbar_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+
+        <ImageButton
+            android:id="@+id/btn_back_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/btn_back_mixmatch" />
+
+        <com.svc.sml.Utility.TextViewFontHeader
+            style="@style/inTitleHeader"
+            android:text="Personalize avatar" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/con_btn_avatar_addface"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:clickable="true"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_avatar_addface"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:padding="6dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/add_face_female"-->
+                <!--android:layout_marginBottom="4dp"/>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/shared_layout_bottom_view"
+        android:layout_below="@+id/container_topbar_avatar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--android:background="@android:color/holo_blue_bright"-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_weight="1">
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/surfaceviewclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <ImageButton
+                    android:id="@+id/ib_avatar_backword"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_left" />
+
+                <ImageButton
+                    android:id="@+id/ib_avatar_forward"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <ImageButton
+                    android:id="@+id/ib_avatar_addface"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_face_female" />
+
+
+                <ImageButton
+                    android:id="@+id/ib_avatar_delete"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="52dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/delete_avatar" />
+                <!--</LinearLayout>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ib_avatar_edit"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="top|left"-->
+                    <!--android:layout_marginTop="1dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/edit_face_female" />-->
+
+                <Button
+                    android:id="@+id/btn_avatar_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Fine-tune your 3D shape"
+                    android:paddingBottom="2dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/selector_transparent_bg"
+                    />
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+
+
+                <com.svc.sml.View.LoadingView
+                    android:id="@+id/loading_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_loading_view"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="38dp"
+                    app:loadingViewText="Loading ...">
+
+                </com.svc.sml.View.LoadingView>
+
+                <com.svc.sml.Utility.TextViewML
+                    android:id="@+id/btn_avatar_set_default_face"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bar_horizontal_looks"
+                    android:gravity="center"
+                    android:layout_marginBottom="-7dp"
+                    android:text="SET AS DEFAULT AVATAR"
+                    android:textColor="@color/tcolor"
+                     />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_change_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Gender"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <!--android:layout_below="@+id/tv_bm_title"-->
+            <fragment
+                android:id="@+id/fragmentBMAvatar"
+                android:name="com.svc.sml.Fragments.BMAvatarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                tools:layout="@layout/fragment_bm_avatar" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        layout="@layout/shared_layout_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/con_inst_overlay_addface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true">
+        <ImageView
+            android:src="@drawable/inst_overlay_addface"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>

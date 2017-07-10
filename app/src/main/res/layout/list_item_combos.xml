@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:height ="140dp"
+    android:minHeight="120dp"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/default_text_color"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Combo Title Name"
+            android:textSize="15sp"
+            android:textColor="@color/textColorPrimary"
+            android:id="@+id/tv_combo_title" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_like_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/iv_style_rating"
+            android:layout_marginRight="35dp"
+            android:focusable="false"
+
+            >
+            <!--android:onClick="onllLikeActionHandler"-->
+        <ImageView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|left"
+            android:id="@+id/iv_like"
+            android:src="@drawable/like"
+            android:layout_toLeftOf="@+id/tv_num_likes"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="20"
+            android:textSize="15sp"
+            android:textColor="@color/textColorPrimary"
+            android:id="@+id/tv_num_likes"
+            />
+
+        </LinearLayout>
+        <ImageView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:id="@+id/iv_style_rating"
+            android:layout_toLeftOf="@+id/tv_style_rating"
+            android:layout_marginRight="8dp"
+            />
+        <!--android:src="@drawable/style_old"-->
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="4/5"
+            android:textSize="15sp"
+            android:textColor="@color/textColorPrimary"
+            android:id="@+id/tv_style_rating"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light">
+
+
+       <!-- <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright">
+
+                <ImageView
+                    android:id="@+id/iv_thumbnail_combo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+        </HorizontalScrollView>-->
+
+        <ImageView
+            android:id="@+id/iv_thumbnail_combo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo_full_105"
+            android:background="@drawable/rectangle"
+            />
+        <ProgressBar
+            android:id="@+id/pb_combopics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:foregroundTint="@android:color/holo_blue_dark"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

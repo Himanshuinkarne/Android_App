@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdddddd"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/con_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@drawable/bg_header">
+        <!--<com.svc.inkarne.Utility.TextViewLobster-->
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:text="Looks Closet"
+            style="@style/inTitleHeader"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_download_help"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_help"
+            android:background="?attr/selectableItemBackgroundBorderless"
+             />
+        <!--android:text="FACE"-->
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/con_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/height_header"-->
+        <!--android:background="@drawable/bg_header">-->
+        <!--<com.svc.inkarne.Utility.TextViewFutra-->
+            <!--android:id="@+id/tv_cart_title"-->
+            <!--android:text="Looks Closet"-->
+            <!--style="@style/inTitleHeader"/>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_looks"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/collectionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            />
+        <!--android:background="@android:color/holo_green_dark"-->
+        <!--<View-->
+            <!--android:layout_below="@+id/collectionView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/holo_red_light"></View>-->
+
+        <com.svc.sml.View.LoadingView
+            android:id="@+id/loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_loading_view"
+            android:layout_alignParentBottom="true"
+            app:loadingViewText="@string/message_rendering_looks"
+            >
+
+        </com.svc.sml.View.LoadingView>
+
+        <!--<include-->
+            <!--android:id="@+id/loading_view"-->
+            <!--layout="@layout/view_loading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:l-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pb_collection_skuDownload"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:indeterminate="true"-->
+            <!--android:layout_centerInParent="true"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

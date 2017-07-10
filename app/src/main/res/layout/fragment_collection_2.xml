@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.svc.sml.Fragments.CollectionFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.svc.sml.Utility.HorizontalListView
+            android:id="@+id/hlist_looks_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_lookalike_sku"
+            android:layout_gravity="center_vertical"
+            android:divider="@android:color/transparent"
+            android:fadingEdgeLength="5dp"
+            android:requiresFadingEdge="horizontal"
+            widget:dividerWidth="12dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager_looks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.svc.sml.Utility.HorizontalListView
+            android:id="@+id/hlist_looks_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_lookalike_sku"
+            android:layout_gravity="center_vertical"
+            android:divider="@android:color/transparent"
+            android:fadingEdgeLength="5dp"
+            android:requiresFadingEdge="horizontal"
+            widget:dividerWidth="12dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

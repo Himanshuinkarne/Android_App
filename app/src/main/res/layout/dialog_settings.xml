@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitetitle"
+    android:divider="@color/whitetitle"
+    android:dividerPadding="15dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:showDividers="middle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+
+        android:textColor="@color/textColorSecondry"
+        android:textSize="18sp"
+
+        />
+    <!--android:gravity="center_horizontal"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_wifi_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:checked="false"
+            android:minWidth="220dp"
+            android:switchMinWidth="65dp"
+            android:text="@string/switch_message_network_download"
+            android:textColor="@color/tcolor"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumbTextPadding="15dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_auto_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/switch_wifi_only"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:minWidth="220dp"
+            android:switchMinWidth="65dp"
+            android:text="@string/switch_message_autorotate"
+            android:textColor="@color/tcolor"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumbTextPadding="15dp"
+            />
+        <!--app:showText="true"-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_switch_status"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_below="@+id/switch_mobiledata_enable"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:textColor="@color/tcolor"-->
+        <!--android:text="@string/switch_message_network_download"-->
+        <!--/>-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    </RelativeLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="@dimen/margin_vertical_network_notifcation">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cb_donot_show"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/color_gray_line"-->
+    <!--android:checked="false"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:text="@string/cb_donot_show_again"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#ddaaaaaa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_settings_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_settings_save"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/textColorPrimary" />
+
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Save"
+            android:textColor="@color/textColorPrimary" />
+
+    </RelativeLayout>
+
+</LinearLayout>

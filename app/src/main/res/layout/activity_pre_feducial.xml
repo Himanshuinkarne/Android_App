@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.inkarne.inkarne.fragments.FaceImageSelectionFragment">
+
+    <RelativeLayout
+        android:id="@+id/container_video_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitetitle">
+
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:id="@+id/tv_title_image_selection"
+            style="@style/inTitleHeaderParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_header"
+            android:background="@drawable/bg_header"
+            android:gravity="center"
+            android:text="Fine-tune your facial features" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/shared_layout_bottom_view"
+            android:layout_below="@+id/tv_title_image_selection"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent">
+
+            <VideoView
+                android:id="@+id/vv_face_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/shared_layout_bottom_view"
+            layout="@layout/shared_layout_bottom_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</FrameLayout>

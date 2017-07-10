@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.LookLikeFragment">
+
+    <RelativeLayout
+        android:id="@+id/con_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape_bg_shadow_whitebg"
+        android:layout_marginRight="15dp">
+
+        <com.svc.sml.View.FmLayout
+            android:id="@+id/clausal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <!--android:background="@drawable/bg_sku"-->
+
+        <LinearLayout
+            android:id="@+id/con_product_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clausal"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_bg_shadow_whitebg"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="6dp"
+                android:paddingBottom="2dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/con_product_info"
+
+            android:layout_marginTop="-1dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--android:layout_marginTop="5dp"-->
+            <Button
+                android:id="@+id/btn_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_shadow_whitebg"
+                android:scaleType="fitCenter"
+                android:textColor="@color/tcolor_green"
+                android:text="ADD TO CART" />
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_marginLeft="-1dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_shadow_whitebg"
+                android:textColor="@color/tcolor_green"
+                android:scaleType="centerInside"
+                android:text="BUY" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

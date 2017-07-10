@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:local="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/toolbar_bottom"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/toolbar_bg_rectangle"--><!-->-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottom_bar"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+    <ImageView
+        android:id="@+id/toolbar_ibtn_settings"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_shop_cart" />
+
+    <ImageView
+        android:id="@+id/toolbar_ibtn_redoAvatar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_shop_avatar" />
+
+
+    <ImageView
+        android:id="@+id/toolbar_ibtn_shop"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_shop_body" />
+
+    <ImageView
+        android:id="@+id/toolbar_ibtn_looks"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_shop_looks" />
+
+    <ImageView
+        android:id="@+id/toolbar_ibtn_mixmatch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_shop_mixmatch" />
+
+
+</LinearLayout><!--</android.support.v7.widget.Toolbar>-->
+
+    <ImageView
+        android:id="@+id/toolbar_bg_selected_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@drawable/rectangle_outline_black_trans_rounded"
+        android:visibility="invisible"
+  />
+
+</FrameLayout>
+
+

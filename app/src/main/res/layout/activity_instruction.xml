@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_looks"
+android:orientation="vertical"
+tools:context="com.svc.sml.Fragments.LooksFragment">
+
+<!-- TODO: Update blank fragment layout -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_above="@+id/shared_layout_bottom_view"
+    android:background="#00999999">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager_lookboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <com.svc.sml.Utility.CircleIndicator
+        android:id="@+id/look_board_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"/>
+    <!--android:background="#aaddaaaa"-->
+
+</FrameLayout>
+
+    <include
+        android:id="@+id/shared_layout_bottom_view"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/shared_layout_bottom_btn" />
+
+</RelativeLayout>

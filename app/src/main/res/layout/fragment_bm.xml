@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.svc.sml.Fragments.BMFragment"
+    android:background="@color/whitetitle"
+    >
+    <!--android:background="@color/color_gray_line"-->
+    <!--android:background="@color/bm_bg"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_bg_bm_gender"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/bg_bm_male" />-->
+
+        <ImageView
+            android:id="@+id/iv_bg_bm_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_bm"
+            android:src="@drawable/bg_bm_female" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <com.svc.sml.Utility.TextViewML
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:paddingLeft="3dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/textColorSecondry"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_bm_height_ft"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="5"
+                    android:textColor="@color/tcolor"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_bg_reg_small"/>
+
+                <com.svc.sml.Utility.TextViewML
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft."
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/tcolor"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_bm_height_in"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="8"
+                    android:textColor="@color/tcolor"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_bg_reg_small"/>
+
+                <com.svc.sml.Utility.TextViewML
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="in."
+                    android:textColor="@color/tcolor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+            <!--android:gravity="right"-->
+
+            <com.svc.sml.Utility.TextViewML
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textStyle="bold"
+                android:paddingLeft="3dp"
+                android:layout_gravity="left"
+                android:textColor="@color/textColorSecondry"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+
+                <Button
+                    android:id="@+id/btn_bm_weight"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="60"
+                    android:textColor="@color/tcolor"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_bg_reg_small"/>
+
+                <com.svc.sml.Utility.TextViewML
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kgs."
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/tcolor"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.svc.sml.Utility.BMSeekBar
+            android:id="@+id/bustSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="100dp"
+            android:indeterminate="false"
+            android:max="45"
+            android:maxHeight="25dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="33"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Bust"
+            app:progressLeftTextSize="15dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressThumbTextSize ="14dp"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+        <com.svc.sml.Utility.BMSeekBar
+            android:id="@+id/waistSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="35dp"
+            android:indeterminate="false"
+            android:max="45"
+            android:maxHeight="25dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="30"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Waist"
+            app:progressLeftTextSize="15dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressThumbTextSize ="14dp"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+
+        <com.svc.sml.Utility.BMSeekBar
+            android:id="@+id/hipsSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:indeterminate="false"
+            android:max="45"
+            android:maxHeight="25dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:progress="33"
+            android:progressDrawable="@drawable/styled_progress_bm"
+            android:thumb="@drawable/styled_progress_thumb_bm"
+            app:progressLeftText="Hips"
+            app:progressLeftTextSize="15dp"
+            app:progressLeftTextColor ="@color/textColorSecondry"
+            app:progressRightText="Inches"
+            app:progressRightTextSize ="11dp"
+            app:progressRightTextColor ="@color/tcolor"
+            app:progressThumbTextSize ="14dp"
+            app:progressLeftTextPadding ="20dp"
+            app:progressThumbTextPadding="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

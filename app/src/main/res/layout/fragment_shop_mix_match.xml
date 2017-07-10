@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con_mixmatch_listview"
+    android:layout_width="@dimen/width_mixmatch_fragment_list"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.svc.sml.Fragments.ShopMixMatchFragment">
+    <!--android:paddingLeft="2dp"-->
+    <!--android:background="@drawable/rectangle_border_mixmatch_fragment"-->
+
+
+    <ListView
+        android:layout_above="@+id/con_mixmatch_buttons"
+        android:id="@+id/lv_mixmatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:divider="#ffffff"
+        android:layout_marginLeft="1dp"
+        android:fadingEdgeLength="5dp"
+        android:requiresFadingEdge="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/con_mixmatch_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/whitetitle"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_mixmatch_set_default"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_pin"
+
+            />
+        <!--android:visibility="gone"-->
+        <ImageButton
+            android:id="@+id/btn_mixmatch_cross"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_cross_mixmatch" />
+
+        <ImageButton
+            android:id="@+id/btn_mixmatch_back"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_mixmatch" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_mixmatch_list_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bar_indeterminate"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="#cccccccc"
+        android:layout_height="match_parent"
+        >
+    </View>
+</RelativeLayout>
+
+
+    <!--
+        <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/width_mixmatch_fragment_list"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.svc.inkarne.Fragments.ShopMixMatchFragment">
+        &lt;!&ndash;android:background="#44000000"&ndash;&gt;
+        &lt;!&ndash;android:background="@android:color/holo_orange_light"&ndash;&gt;
+        &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/con_mixmatch_title"&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_toLeftOf="@+id/con_mixmatch_listview"&ndash;&gt;
+            &lt;!&ndash;android:background="#aadddddd">&ndash;&gt;
+
+            &lt;!&ndash;<com.svc.inkarne.Utility.VTextView&ndash;&gt;
+                &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+                &lt;!&ndash;android:gravity="bottom"&ndash;&gt;
+                &lt;!&ndash;android:text="Accessories"&ndash;&gt;
+                &lt;!&ndash;android:textColor="@color/color_translucent_black_overlay"&ndash;&gt;
+                &lt;!&ndash;android:textSize="12sp"&ndash;&gt;
+                &lt;!&ndash;android:textStyle="bold"/>&ndash;&gt;
+        &lt;!&ndash;</LinearLayout>&ndash;&gt;
+
+        <LinearLayout
+            android:id="@+id/con_mixmatch_listview"
+            android:layout_width="@dimen/width_mixmatch_fragment_list"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            >
+            &lt;!&ndash;android:background="@color/color_mix_match_category_list"&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/width_mixmatch_fragment_list"&ndash;&gt;
+            <ListView
+                android:id="@+id/lv_mixmatch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:divider="#ffffff"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:layout_weight="1"
+                 />
+            <LinearLayout
+                android:id="@+id/con_mixmatch_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/whitetitle"
+                android:layout_gravity="bottom|center_horizontal"
+                android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btn_mixmatch_set_default"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pin"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+
+                />
+                &lt;!&ndash;android:visibility="gone"&ndash;&gt;
+            <ImageButton
+                android:id="@+id/btn_mixmatch_cross"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_cross_mixmatch"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_mixmatch_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_back_mixmatch"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>-->

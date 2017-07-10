@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <!--android:paddingBottom="15dp"-->
+    <!--android:background="@android:color/holo_green_light"-->
+    <!--android:background="#ffeeeeee"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_outline_black_trans_rounded_lookcloset"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp">
+    <RelativeLayout
+        android:id="@+id/con_gallery_header"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:clickable="true"
+
+
+
+        >
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:background="@drawable/bar_horizontal_looks"-->
+        <!--android:background="@drawable/bg_footer"-->
+        <com.svc.sml.Utility.TextViewMolengo
+            android:id="@+id/tv_title_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Collections"
+            android:textSize="14sp"
+            android:textColor="@color/tcolor_green" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff666666"
+            android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
+
+    <!--<Gallery-->
+        <!--android:id="@+id/galleryView_collections"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+    <!--<com.svc.inkarne.Utility.CoverFlow xmlns:coverflow="http://schemas.android.com/apk/res/com.svc.inkarne.Utility"-->
+
+    <com.svc.sml.Utility.CoverFlow
+        android:layout_below="@+id/con_gallery_header"
+        coverflow:imageWidth="@dimen/width_collection_coverflow"
+        coverflow:imageHeight="@dimen/height_collection_coverflow"
+        coverflow:withReflection="true"
+        coverflow:imageReflectionRatio="0.2"
+        coverflow:reflectionGap="2dip"
+        android:id="@+id/coverflow_looks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        android:id="@+id/tv_looks_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#ffaaaaaa"
+        android:visibility="invisible"
+        />
+    </RelativeLayout>
+</RelativeLayout>

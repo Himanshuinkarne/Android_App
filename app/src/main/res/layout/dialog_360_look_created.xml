@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/translucent_white">
+
+    <com.svc.sml.Utility.TextViewMolengo
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="360&#730; look saved in your gallery"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textColor="@color/textColorSecondry"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:dividerPadding="2dp"
+        android:weightSum="3"
+        android:divider="@color/color_gray_line"
+        >
+        <ImageButton
+            android:id="@+id/btnVideoPlay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/preview_360"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content" />
+
+            />
+        <ImageButton
+            android:id="@+id/btnVideoShare"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/share_360_final"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/btnVideoDelete"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src= "@drawable/delete_360"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:padding="20dp"
+        android:id="@+id/btnVideoCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="Cancel"
+        android:textColor="@color/tcolor"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

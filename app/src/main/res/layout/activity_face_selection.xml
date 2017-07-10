@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inkarne.inkarne.fragments.FaceImageSelectionFragment"
+    android:background="@android:color/white">
+
+
+    <!--android:id="@+id/con_face_image_selection"-->
+    <RelativeLayout
+        android:id="@+id/container_video_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitetitle">
+        <com.svc.sml.Utility.TextViewFontHeader
+            android:id="@+id/tv_title_image_selection"
+            style="@style/inTitleHeaderParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_header"
+            android:background="@drawable/bg_header"
+            android:gravity="center"
+            android:text="Select a selfie" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/con_btn_use_existing"
+            android:layout_below="@+id/tv_title_image_selection"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent">
+
+            <VideoView
+                android:id="@+id/vv_face_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="0dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/con_btn_use_existing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_footer"
+            android:layout_above="@+id/con_btn_take_selfie"
+            android:background="@drawable/selector_btn_bottom_gallery"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_small_gallery" />
+
+                <!--<TextView-->
+                <com.svc.sml.Utility.TextViewML
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Use existing image"
+                    android:textColor="@color/default_text_color"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/con_btn_take_selfie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_footer"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_btn_footer"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_small_camera" />
+
+                <com.svc.sml.Utility.TextViewML
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Take a new picture"
+                    android:textColor="@color/tcolor"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

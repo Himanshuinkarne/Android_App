@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000">
+
+
+    <VideoView
+        android:id="@+id/vv_info_face_selection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/con_header"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_header">
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:text="Title"
+            style="@style/inTitleHeader"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/tcolor"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/con_btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+             />
+        <!--android:background="@drawable/btn_skip"-->
+        <!--android:text="Skip"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textColor="@color/default_text_color"-->
+    </LinearLayout>
+</FrameLayout>

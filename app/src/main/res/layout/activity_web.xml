@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.svc.sml.Activity.WebActivity">
+    <RelativeLayout
+        android:id="@+id/rl_webview_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#dddddd"
+        >
+        <ImageButton
+            android:id="@+id/ib_webview_back"
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_cross_mixmatch"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/tv_web_combo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Combo Title"
+            android:textColor="@color/material_blue_grey_950"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/wb_combo_buy"
+        android:layout_below="@+id/rl_webview_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <ProgressBar
+        android:id="@+id/pb_webview_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_bar_indeterminate"
+        android:indeterminate="true"/>
+
+</RelativeLayout>
